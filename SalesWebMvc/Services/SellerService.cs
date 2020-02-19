@@ -22,7 +22,7 @@ namespace SalesWebMvc.Services
 
         public void Isert(Seller obj)
         {
-            obj.Departament = _context.Departament.First();
+            //obj.Departament = _context.Departament.First();
             _context.Add(obj);
             _context.SaveChanges();
         }
